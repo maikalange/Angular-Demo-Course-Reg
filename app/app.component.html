@@ -1,0 +1,39 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="font-family: Trebuchet MS, Arial, Helvetica, sans-serif">
+    <img src="../assets/images/acme_logo.png" alt="Acme University Student Logo" width="55" height="56"/>
+    <h1>Acme University</h1>
+    <fieldset>
+        <legend>Learner Registration</legend>
+        <label for="firstName">First name</label><input type="text" id="firstName" required/>
+        <label for="lastName">Last name</label><input type="text" id="lastName" required/>
+        <p>Do you have any programming experience</p>
+        Yes<input type="radio" value="yes" name="progExperience" id="progExperienceYes">
+        No<input type="radio" value="no" name="progExperience" id="progExperienceNo">
+        <select id="progLanguage" multiple>
+            <optgroup label="General Programming Languages">
+                <option value="Scala">Scala</option>
+                <option value="CSharp">C#</option>
+                <option value="CPlusPlus">C++</option>
+            </optgroup>
+            <optgroup label="Query Languages">
+                <option value="SQLServer">SQL Server</option>
+                <option value="OraclePLSQL">PLSQL</option>
+            </optgroup>
+            <optgroup label="Scripting Languages">
+                <option value="Typescript">Typescript</option>
+                <option value="JavaScript">JavaScript</option>
+            </optgroup>
+        </select>
+        <br/>
+        <input type="button" value="save" id="saveButton">
+        <h2>Course Participants</h2>
+        <table id="learners">
+            <tr><th>Name</th><th>Programming Experience</th><th>Programming Languages</th><th>&nbsp;</th></tr>
+            <!--repeat this  row using ngFor-->
+            <tr><td>John Doe</td><td>Yes</td><td>Java, C#, ASP.NET</td><td><input type="button" value ="delete..."></td>
+        </table>
+    </fieldset>
+</div>
+
+
+
